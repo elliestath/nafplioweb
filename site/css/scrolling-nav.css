@@ -18,6 +18,7 @@ html {
 
 @media(min-width:767px) {
     .navbar {
+        font-family: 'Open Sans', sans-serif;
         padding: 20px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -30,14 +31,13 @@ html {
 
 }
 
-h1{
-    font-size:48px;
-    padding-bottom: 40px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+p, div {
+    font-family: 'Open Sans', sans-serif;
 }
 
-p{
-
-}
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
@@ -57,12 +57,15 @@ of those sections to manage the look and feel of the site. */
 }
 
 .intro-section h1{
+    font-family: 'Montserrat', sans-serif;
     font-size:96px;
+   /* padding-bottom: 0px;*/
 }
 
 .intro-section h2{
-    font-size:48px;
-    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:30px;
+    /*padding-bottom: 0px;*/
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -96,8 +99,8 @@ of those sections to manage the look and feel of the site. */
 
 .carousel-indicators li {
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 12px;
+    height: 12px;
     margin: 10px;
     text-indent: 0;
     cursor: pointer;
@@ -117,10 +120,9 @@ of those sections to manage the look and feel of the site. */
 
 /*-----------------------------------------------------------------------------*/
 .about-section {
-    
     padding-top: 100px;
     text-align: center;
-    background: #fff5e6;
+    background: #b3d9ff;
 
 }
 
