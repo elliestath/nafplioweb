@@ -196,8 +196,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .footer {
-  padding-bottom: 20;
+  padding-bottom: 0px;
   /* Set the fixed height of the footer here */
   /*height: 60px;*/
-  background-color: #eee;
 }
