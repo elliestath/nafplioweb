@@ -33,21 +33,23 @@ html {
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* navbar */
-.navbar-ex1-collapse{
+/*.navbar-ex1-collapse{
 border-color: #0088cc;
-}
+}*/
 
 /* title */
-.navbar-default .navbar-brand {
+/*.navbar-default .navbar-brand {
     color: #0088cc;
 }
 
 .navbar-ex1-collapse > .active > a, .navbar-ex1-collapse > .active > a:hover, .navbar-ex1-collapse > .active > a:focus {
     background-color: #0088cc;
     color: #0088cc;
+}*/
+
+.navbar-brand{
+    vertical-align: middle;
 }
-
-
 
 
 
@@ -156,6 +158,10 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 20px;
 }
 
+.about-section li{
+  margin: 10px 0;
+}
+
 .committees-section {
 
     padding-top: 100px;
@@ -232,6 +238,3 @@ of those sections to manage the look and feel of the site. */
   /*height: 60px;*/
 }
 
-li{
-  margin: 10px 0;
-}
