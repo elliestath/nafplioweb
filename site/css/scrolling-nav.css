@@ -31,11 +31,35 @@ html {
 
 }
 
+/*---------------------------------------------------------------------------------------------------------*/
+/* navbar */
+.navbar-ex1-collapse{
+border-color: #0088cc;
+}
+
+/* title */
+.navbar-default .navbar-brand {
+    color: #0088cc;
+}
+
+.navbar-ex1-collapse > .active > a, .navbar-ex1-collapse > .active > a:hover, .navbar-ex1-collapse > .active > a:focus {
+    background-color: #0088cc;
+    color: #0088cc;
+}
+
+
+
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 p, div {
     font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    padding-bottom: 50px;
 }
 
 
@@ -59,7 +83,7 @@ of those sections to manage the look and feel of the site. */
 .intro-section h1{
     font-family: 'Montserrat', sans-serif;
     font-size:96px;
-   /* padding-bottom: 0px;*/
+    padding-bottom: 0px;
 }
 
 .intro-section h2{
@@ -122,8 +146,14 @@ of those sections to manage the look and feel of the site. */
 .about-section {
     padding-top: 100px;
     text-align: center;
-    background: #b3d9ff;
+    background: #0088cc; /*#0099cc*/
 
+}
+
+.about-section h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size:30px;
+    padding-bottom: 20px;
 }
 
 .committees-section {
@@ -137,7 +167,7 @@ of those sections to manage the look and feel of the site. */
     
     padding-top: 100px;
     text-align: center;
-    background: #fff5e6;
+    background: #0088cc; /*#fff5e6*/
 }
 
 .keynote-section {
@@ -151,7 +181,7 @@ of those sections to manage the look and feel of the site. */
     
     padding-top: 100px;
     text-align: center;
-    background: #fff5e6;
+    background: #0088cc;
 }
 
 #regbutton {
@@ -169,7 +199,7 @@ of those sections to manage the look and feel of the site. */
 
     padding-top: 100px;
     text-align: center;
-    background: #fff5e6;
+    background: #0088cc;
 }
 
 #map-outer { height: 420px; 
@@ -177,7 +207,7 @@ of those sections to manage the look and feel of the site. */
             vertical-align: middle;
             padding: 50px; 
             margin-bottom: 20px; 
-            background-color:#fff5e6 }
+            background-color:#0088cc }
 
 #map-container { height: 400px }
 @media all and (max-width: 991px) {
@@ -193,10 +223,15 @@ of those sections to manage the look and feel of the site. */
 
 .contact-section p{
     padding-bottom: 40px;
+
 }
 
 .footer {
   padding-bottom: 0px;
   /* Set the fixed height of the footer here */
   /*height: 60px;*/
+}
+
+li{
+  margin: 10px 0;
 }
