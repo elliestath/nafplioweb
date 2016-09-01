@@ -118,6 +118,11 @@ of those sections to manage the look and feel of the site. */
   height: 300px;
   background-color: #fff;
 }
+
+.carousel-inner{
+    background-color:  #fff;
+}
+
 .carousel-inner > .item > img {
   /*position: absolute;
   top: 0;
@@ -141,10 +146,14 @@ of those sections to manage the look and feel of the site. */
 }
 
 .carousel-control.left, .carousel-control.right {
-    background-image: none;
+    background-image: none !important;
     background-color: #fff;
-    filter: progid:none !important;
+    filter: none progid:none !important;
     outline: 0;
+
+    /*filter: none !important;
+    progid:none !important;*/
+
 }
 
 
