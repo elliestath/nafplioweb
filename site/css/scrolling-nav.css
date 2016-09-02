@@ -255,3 +255,6 @@ of those sections to manage the look and feel of the site. */
   /*height: 60px;*/
 }
 
+.table { 
+    border-collapse: separate !important;
+}
