@@ -12,41 +12,25 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size:1.7em; 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:1.9em; 
 }
 
-@media(min-width:767px) {
+@media(min-width: 992px) {
     .navbar {
-        font-family: 'Open Sans', sans-serif;
-        padding: 20px 0;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 15px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
+    } 
 
     .top-nav-collapse {
         padding: 0;
     }
-
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
-/* navbar */
-/*.navbar-ex1-collapse{
-border-color: #0088cc;
-}*/
-
-/* title */
-/*.navbar-default .navbar-brand {
-    color: #0088cc;
-}
-
-.navbar-ex1-collapse > .active > a, .navbar-ex1-collapse > .active > a:hover, .navbar-ex1-collapse > .active > a:focus {
-    background-color: #0088cc;
-    color: #0088cc;
-}*/
-
 .navbar-brand{
     vertical-align: middle;
 }
@@ -63,14 +47,9 @@ h1{
     padding-bottom: 50px;
 }
 
-
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
-
 .intro-section {
     min-height: 980px;
-    padding-top: 90px;
+    padding-top: 80px;
     text-align: center;
     background: #fff;
     -webkit-background-size: cover;
@@ -82,7 +61,7 @@ of those sections to manage the look and feel of the site. */
 .jumbotron h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: #fff;
+    color: #fff !important;
     text-shadow: currentColor;
     letter-spacing: 8px;
     text-shadow: 2px 2px #005580;
@@ -114,87 +93,48 @@ of those sections to manage the look and feel of the site. */
   }
 }
 
+/********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
-  /* Home Page */
   .container .jumbotron {
     background: url('../images/2i.jpg') no-repeat center;
-    height: 558px;
+    background-size:100% 100%;
+    height: 530px;
+    color: #fff;
   }
-  /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Home Page */
   .container .jumbotron {
     background: url('../images/2i.jpg') no-repeat center;
-    height: 432px;
+    background-size:100% 100%;
+    height: 530px;
   }
-  /* End Home Page */
 }
 
+@media (max-width: 767px) {
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+  .jumbotron h1{
+    color:#0099e6 !important;
+  }
 
-/* Carousel base class */
-.carousel {
-  height: 300px;
-  width:100%;
-  margin-bottom: 30px;
-  background-color: #fff;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
+  .jumbotron a{
+    visibility: hidden;
+  }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 300px;
-  background-color: #fff;
-}
-
-.carousel-inner{
-    background-color:  #fff;
-}
-
-.carousel-inner > .item > img {
-  /*position: absolute;
-  top: 0;
-  left: 0;*/
-  margin: 0 auto;
-  height: 300px;
-  width:400px;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin: 10px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
-}
-
-.carousel-control.left, .carousel-control.right {
-    background-image: none !important;
-    background-color: #fff;
-    filter: none progid:none !important;
-    outline: 0;
-
-    /*filter: none !important;
-    progid:none !important;*/
+  .xs-image-gal{
+    margin-bottom: 20px;
+  }
 
 }
+
 
 
 /*-----------------------------------------------------------------------------*/
+section{
+    padding-bottom: 50px;
+}
 .about-section h1, .committees-section h1, .dates-section h1, .keynote-section h1, .registration-section h1, .programme-section h1, .venue-section h1, .contact-section h1{
     letter-spacing: 8px;
     font-weight: 600;
@@ -204,13 +144,17 @@ of those sections to manage the look and feel of the site. */
     padding-top: 100px;
     text-align: center; /*#0099cc //0088cc */
     background: #0099e6;
-
+    min-height:200%;
 }
 
-.about-section h2{
+.about-section h2, .dates-section h2, .keynote-section h2, .venue-section h2{
     font-size:30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     font-weight: 600;
+}
+
+.about-section ul{
+  text-align:left;
 }
 
 .about-section li{
@@ -221,16 +165,17 @@ of those sections to manage the look and feel of the site. */
     text-align: justify;
 }
 
+.about-section div{
+    padding-bottom: 30px;
+}
 
 .committees-section {
-
     padding-top: 100px;
     text-align: center;
     background: #fff;
 }
 
 .dates-section {
-    
     padding-top: 100px;
     text-align: center;
     background: #0099e6; /*#fff5e6*/
@@ -240,8 +185,12 @@ of those sections to manage the look and feel of the site. */
     text-align: justify;
 }
 
-.keynote-section {
-    
+.dates-section a{
+    text-decoration: bold; 
+    color:black;
+}
+
+.keynote-section {   
     padding-top: 100px;
     text-align: center;
     background: #fff; /*eee*/
@@ -260,14 +209,12 @@ of those sections to manage the look and feel of the site. */
 }
 
 .programme-section {
-    
     padding-top: 100px;
     text-align: center;
     background: #fff;
 }
 
 .venue-section {
-
     padding-top: 100px;
     text-align: center;
     background: #0099e6;
@@ -285,31 +232,26 @@ of those sections to manage the look and feel of the site. */
     #map-outer  { height: 600px }
 }
 
-
 .contact-section {
     padding-top: 100px;
     text-align: center;
     background: #fff;
+    padding-bottom: 0px;
 }
 
 .contact-section p{
     padding-bottom: 40px;
-
-}
-
-.footer {
-  padding-bottom: 0px;
-  /* Set the fixed height of the footer here */
-  /*height: 60px;*/
 }
 
 .table { 
     border-collapse: separate !important;
 }
 
-.vertical-center {
-    display: flex;
-    align-items: center;
+.modal-dialog {width:600px;}
+.thumbnail {margin-bottom:6px;}
+
+.empty{
+    margin-bottom: 50px;
 }
 
 
