@@ -4,17 +4,17 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size:1.7em;
-    
+    font-size:1.7em; 
 }
-
-html {
-    /*width: 100%;
-    height: 100%;*/
-}
-
 
 @media(min-width:767px) {
     .navbar {
@@ -51,11 +51,10 @@ border-color: #0088cc;
     vertical-align: middle;
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
 p, div {
     font-family: 'Open Sans', sans-serif;
 }
@@ -71,32 +70,70 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     min-height: 980px;
-    padding-top: 140px;
+    padding-top: 90px;
     text-align: center;
     background: #fff;
-    /*background-image: url("images/2.jpg");*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background-position: bottom;
 }
 
-.intro-section h1{
+.jumbotron h1{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: #0099e6;
     text-shadow: currentColor;
     letter-spacing: 8px;
     text-shadow: 2px 2px #005580;
-    font-size:80px;
-    padding-bottom: 0px;
+    font-size:60px;
+    margin-top:20%;
 }
 
 .intro-section h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size:24px;
-    /*padding-bottom: 0px;*/
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size:26px;
+    letter-spacing: 1px;
 }
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 40px #0099e6;
+  border: 1px solid #fff;
+  padding-bottom: 0px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/2ii.jpg') no-repeat center;
+    background-size:100% 100%;
+    height: 530px;
+    color: #fff;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/2ii.jpg') no-repeat center;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/2ii.jpg') no-repeat center;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -105,7 +142,7 @@ of those sections to manage the look and feel of the site. */
 .carousel {
   height: 300px;
   width:100%;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   background-color: #fff;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -160,6 +197,7 @@ of those sections to manage the look and feel of the site. */
 /*-----------------------------------------------------------------------------*/
 .about-section h1, .committees-section h1, .dates-section h1, .keynote-section h1, .registration-section h1, .programme-section h1, .venue-section h1, .contact-section h1{
     letter-spacing: 8px;
+    font-weight: 600;
 }
 
 .about-section {
@@ -172,6 +210,7 @@ of those sections to manage the look and feel of the site. */
 .about-section h2{
     font-size:30px;
     padding-bottom: 20px;
+    font-weight: 600;
 }
 
 .about-section li{
