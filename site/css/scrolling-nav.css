@@ -306,3 +306,10 @@ of those sections to manage the look and feel of the site. */
 .table { 
     border-collapse: separate !important;
 }
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+
