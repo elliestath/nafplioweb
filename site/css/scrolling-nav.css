@@ -70,8 +70,8 @@ h1{
     font-weight: 400;
     color: #fff !important;
     text-shadow: currentColor;
-    letter-spacing: 8px;
-    text-shadow: 2px 2px #005580;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px #005580;
     font-size:60px;
     margin-top:20%;
 }
@@ -85,8 +85,8 @@ h1{
 
 /* HOME PAGE */
 .container .jumbotron {
-  box-shadow: 0 0 40px #0099e6;
-  border: 1px solid #fff;
+  box-shadow: 0 0 10px #0099e6;
+  border: 1px solid #d3d3d3;
   padding-bottom: 0px;
 }
 
@@ -96,7 +96,6 @@ h1{
     background: url('../images/2i.jpg') no-repeat center;
     background-size:100% 100%;
     height: 550px;
-    color: #fff;
   }
 }
 
@@ -107,7 +106,6 @@ h1{
     background: url('../images/2i.jpg') no-repeat center;
     background-size:100% 100%;
     height: 530px;
-    color: #fff;
   }
 }
 
