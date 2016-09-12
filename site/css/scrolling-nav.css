@@ -116,7 +116,7 @@ h1{
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
 
   .jumbotron h1{
     color:#0099e6 !important;
@@ -125,11 +125,12 @@ h1{
   .jumbotron a{
     visibility: hidden;
   }
+}
 
-  .xs-image-gal{
+@media (max-width: 1200px){
+    .xs-image-gal{
     margin-bottom: 20px;
   }
-
 }
 
 /*-----------------------------------------------------------------------------*/
