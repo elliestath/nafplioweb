@@ -193,7 +193,7 @@ section{
     text-align: justify;
 }
 
-.dates-section a{
+.dates-section a, .venue-section a{
     text-decoration: bold; 
     color:black;
 }
@@ -226,6 +226,10 @@ section{
     padding-top: 100px;
     text-align: center;
     background: #0099e6;
+}
+
+.venue-section p{
+    text-align: justify;
 }
 
 #map-outer { height: 420px; 
