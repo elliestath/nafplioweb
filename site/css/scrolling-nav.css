@@ -266,4 +266,10 @@ section{
     margin-bottom: 50px;
 }
 
-
+figcaption{
+    font-size: 14px;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
