@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, div {
     font-family: 'Open Sans', sans-serif;
+    font-size:1.03em;
 }
 
 h1{
@@ -266,7 +267,7 @@ section{
 }
 
 figcaption{
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
     position: absolute;
     bottom: 0;
