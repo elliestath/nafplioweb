@@ -126,11 +126,14 @@ h1{
     visibility: hidden;
   }
 
-  .xs-image-gal{
-    margin-bottom: 20px;
-  }
-
 }
+
+@media (max-width: 1200px) {
+    .xs-image-gal{
+        margin-bottom: 20px;
+      }
+}
+
 
 /*-----------------------------------------------------------------------------*/
 section{
