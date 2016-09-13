@@ -232,11 +232,12 @@ section{
     text-align: justify;
 }
 
+
 #map-outer { height: 420px; 
             text-align: left;
             vertical-align: middle;
-            padding: 50px; 
-            margin-bottom: 20px; 
+            padding: 40px; 
+            margin-bottom: 10px; 
             background-color:#0099e6 }
 
 #map-container { height: 400px }

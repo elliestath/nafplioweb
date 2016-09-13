@@ -321,40 +321,6 @@
                         <a href="http://www7.informatik.uni-wuerzburg.de/mitarbeiter/nuechter/" role="a" target="_blank"><h4>University of W&uuml;rzburg</h4></a>
                         <h3>Efficient 3D Point Cloud Processing with 3DTK -<br> The 3D Toolkit</h3>
 
-                            <div id="blueimp-gallery" class="blueimp-gallery">
-                                <!-- The container for the modal slides -->
-                                <div class="slides"></div>
-                                <!-- Controls for the borderless lightbox -->
-                                <h3 class="title"></h3>
-                                <a class="prev">‹</a>
-                                <a class="next">›</a>
-                                <a class="close">×</a>
-                                <a class="play-pause"></a>
-                                <ol class="indicator"></ol>
-                                <!-- The modal dialog, which will be used to wrap the lightbox content -->
-                                <div class="modal fade">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" aria-hidden="true">&times;</button>
-                                                <h4 class="modal-title"></h4>
-                                            </div>
-                                            <div class="modal-body next"></div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default pull-left prev">
-                                                    <i class="glyphicon glyphicon-chevron-left"></i>
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-primary next">
-                                                    Next
-                                                    <i class="glyphicon glyphicon-chevron-right"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="col-lg-6" id="links">
                                 <a href="images/3DTK1.png" title="3DTK - The 3D Toolkit - SLAM6D" data-gallery>
                                     <img class="xs-image-gal" src="images/3DTK1.png" alt="3DTK1" style="width:210px;height:114px">
@@ -446,12 +412,22 @@
 			        <div id="map-outer" class="col-md-12">
                         <div id="address" class="col-md-4">
                             <address>
-                                <span class="fa fa-map-marker fa-fw fa-2x"></span>
+                                <p><span class="fa fa-map-marker fa-fw fa-2x"></span>
                                 <strong>Vouleftikon</strong><br>
 			                         Staikopoulou, Napflio 21100<br>
-			                         Argolis <br>
-			                         Hellas<br>   
+			                         Argolis, Hellas <br></p>  
                             </address>
+
+                            <!-- <div class="col-lg-12" id="links">
+                                <a href="images/flickr3.jpg" title="Vouleftikon, Nafplio" data-gallery>
+                                    <img src="images/flickr3.jpg" alt="Venue" style="width:120px;height:85px">
+                                </a></div>
+
+                            <div class="col-lg-12" id="links">
+                                <a href="images/flickr4.jpg" title="Vouleftikon, Nafplio" data-gallery>
+                                    <img src="images/flickr4.jpg" alt="Venue" style="width:120px;height:85px">
+                                </a></div> -->
+
                         </div>
                         <div id="map-container" class="col-md-8"></div>
 			      </div><!-- /map-outer -->
@@ -481,7 +457,6 @@
 		            var_mapoptions);
 		 
 				var_marker.setMap(var_map);	
-		 
 		      }
 
 		      google.maps.event.addDomListener(window, 'load', init_map);
