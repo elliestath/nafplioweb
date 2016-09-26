@@ -55,6 +55,15 @@ h1{
     padding-bottom: 50px;
 }
 
+h3{
+    font-size: 20px !important;
+}
+
+a:hover, a:active, a:focus, button, button:focus, button:active, 
+.btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+  outline: 0;
+ }
+
 .intro-section {
     min-height: 980px;
     padding-top: 80px;
@@ -67,13 +76,11 @@ h1{
 }
 
 .jumbotron h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
     color: #fff !important;
-    text-shadow: currentColor;
     letter-spacing: 10px;
-    text-shadow: 1px 1px #005580;
-    font-size:60px;
+    font-size:80px !important;
     margin-top:20%;
 }
 
@@ -87,8 +94,7 @@ h1{
 
 /* HOME PAGE */
 .container .jumbotron {
-  box-shadow: 0 0 10px #0099e6;
-  border: 1px solid #d3d3d3;
+  border-radius: 0 !important;
   padding-bottom: 0px;
 }
 
@@ -141,6 +147,7 @@ h1{
 
 /*-----------------------------------------------------------------------------*/
 section{
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 .about-section h1, .committees-section h1, .dates-section h1, .keynote-section h1, .registration-section h1, .programme-section h1, .venue-section h1, .contact-section h1{
@@ -148,14 +155,17 @@ section{
     font-weight: 600;
 }
 
+.about-section a,.dates-section a, .venue-section a{
+    color:black;
+}
+/*-----------------------------------------------*/
 .about-section {
-    padding-top: 100px;
     text-align: center; /*#0099cc //0088cc */
     background: #0099e6;
-    min-height:200%;
+    /*min-height:200%;*/
 }
 
-.about-section h2, .dates-section h2, .keynote-section h2, .venue-section h2{
+.about-section h2, .dates-section h2, .venue-section h2{
     font-size:30px;
     padding-bottom: 30px;
     font-weight: 600;
@@ -173,40 +183,37 @@ section{
     text-align: justify;
 }
 
-.about-section div{
-    padding-bottom: 30px;
-}
-
+/*-----------------------------------------------*/
 .committees-section {
-    padding-top: 100px;
     text-align: center;
     background: #fff;
 }
 
+/*-----------------------------------------------*/
 .dates-section {
-    padding-top: 100px;
     text-align: center;
     background: #0099e6; /*#fff5e6*/
+}
+
+.dates-section h3 {
+    text-align: left;
 }
 
 .dates-section p{
     text-align: justify;
 }
 
-.dates-section a, .venue-section a{
-    text-decoration: bold; 
-    color:black;
-}
-
+/*-----------------------------------------------*/
 .keynote-section {   
-    padding-top: 100px;
     text-align: center;
     background: #fff; /*eee*/
 }
-
+.keynote-section h3{  
+    padding-top: 15px; 
+    padding-bottom: 20px;
+}
+/*-----------------------------------------------*/
 .registration-section {
-    
-    padding-top: 100px;
     text-align: center;
     background: #0099e6;
 }
@@ -216,14 +223,14 @@ section{
     color: #eee;
 }
 
+/*-----------------------------------------------*/
 .programme-section {
-    padding-top: 100px;
     text-align: center;
     background: #fff;
 }
 
+/*-----------------------------------------------*/
 .venue-section {
-    padding-top: 100px;
     text-align: center;
     background: #0099e6;
 }
@@ -232,6 +239,14 @@ section{
     text-align: justify;
 }
 
+.venue-section h3{
+    padding-bottom: 10px;
+}
+
+
+.venue-section #map-outer p{
+    text-align: center;
+}
 
 #map-outer { height: 420px; 
             text-align: left;
@@ -245,8 +260,8 @@ section{
     #map-outer  { height: 600px }
 }
 
+/*-----------------------------------------------*/
 .contact-section {
-    padding-top: 100px;
     text-align: center;
     background: #fff;
     padding-bottom: 0px;
@@ -256,6 +271,10 @@ section{
     padding-bottom: 25px;
 }
 
+.contact-section .text-muted{
+    font-size: 12px;
+}
+
 .table { 
     border-collapse: separate !important;
 }
@@ -263,10 +282,12 @@ section{
 .modal-dialog {width:600px;}
 .thumbnail {margin-bottom:6px;}
 
+/*-----------------------------------------------*/
 .empty{
-    margin-bottom: 50px;
+    padding-top: 50px;
 }
 
+/*-----------------------------------------------*/
 figcaption{
     font-size: 12px;
     font-style: italic;
@@ -275,6 +296,6 @@ figcaption{
     right: 5px;
 }
 
-a:hover, a:active, a:focus {
-  outline: 0;
- }
+
+
+
