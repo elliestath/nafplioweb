@@ -58,7 +58,7 @@
     <nav class="nav navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-                 <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                 <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -98,12 +98,15 @@
         <!-- /.container -->
     </nav>
 
-    <script>
-    $(".navbar-collapse").click(function(){
-    $(".navbar-collapse").collapse('hide');
-    });
-    </script>
 
+    <script>
+    //hidden menu by default, strange behaviour!!!!!!
+        $(function () {
+            $(".navbar-collapse").click(function() {
+                $(".navbar-collapse").collapse('hide');
+            });
+        });
+    </script>
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">       
@@ -176,7 +179,9 @@
                         <div><hr></div>
                     </div> 
                     <h2>Sponsors</h2>
-    				    <p style="text-align:center;">To be announced soon!</p>     
+                        <a href="http://cipa.icomos.org/" target="_blank">               
+                            <img src="images/logo_ntua_tr.bmp"  alt="NTUA" width="100" height="99";></a>
+    				    <p style="text-align:center;"> <br> More to be announced soon!</p>     
             </div>
         </div>
         </div>
@@ -189,7 +194,7 @@
                 <div class="col-lg-12">
                     <h1>COMMITTEES</h1>
                     <table class="table table-responsive" style="text-align:left;">
-					<tbody>
+                        <tbody>
 					      <th scope="row" rowspan="5" style="vertical-align:middle;">Organised by</th>
 					      <tr><td>Andreas Georgopoulos - Laboratory of Photogrammetry - NTUA, Athens, Greece </td></tr>
                           <tr><td>Diego Gonzalez-Aguilera - Dept. of Cartography and Land - University of Salamanca, Spain</td></tr>
@@ -202,12 +207,14 @@
                           <tr><td>Charalambos Ioannidis - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
                           <tr><td>George Karras - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
 
-                          <th scope="row" rowspan="5" style="vertical-align:middle;">Local Organising Committee</th>
+                          <th scope="row" rowspan="7" style="vertical-align:middle;">Local Organising Committee</th>
                           <tr><td>Panagiotis Agrafiotis - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
+                          <tr><td>Georgia Kontogianni - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
                           <tr><td>Sofia Soile - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
                           <tr><td>Ellie Stathopoulou - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
                           <tr><td>Sevi Tapinaki - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
-					  </tbody>
+                          <tr><td>Regina Chliverou - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
+					   </tbody>
 					</table>  
                 </div>
             </div>
@@ -407,8 +414,32 @@
                 <div class="col-lg-12">
                     <h1>PROGRAMME</h1>
                     <article></article><!-- linkedin -->
-                    <p>
-                    To be announced soon! </p>
+                    <p>The event will feature various technical sessions with oral and poster presentations, live demos and a panel discussion session.<br>
+                    A detailed technical programme is to be announced after the abstract review and authors' notification.<br></p>
+
+                    <div class="empty"></div>
+                    <h3>Demo sessions</h3><p>Participants from academia, research institutes and companies are invited to present and demonstrate their tools, programmes and developments during showcase sessions which will be included in the technical program. <br>If you are willing to showcase your results or products, please contact <a href = "mailto:remondino@fbk.eu">Fabio Remondino</a>.</p>
+
+                    <div class="empty"></div>
+                    <h3>Panel session: 3D Mass Digitization – Future Trends, Challenges and Opportunities </h3>
+                
+                        <p>The demand for efficient 3D digitization methods applicable to heritage objects and sites is continously increasing. Reality-based 3D technologies, post-processing tools web-based access solutions are getting common and widespreading also through non-experts. However, mass capturing and production of 3D digital models still remains a challenge, in particular in terms of reliability, portability, replicability and costs, notwithstanding colors and materials. With first 3D workflows in practice in several institutions and offered by companies, there arises a need for new integrated and affordable technologies to cope with appropriate processing and handling of 3D data, including e.g. techniques for semantic enrichment, efficient storage and long-term preservation of 3D models. In the context of large-scale 3D digitization, there is therefore significant need for research related to topics such as: 1) improved acquisition processes, e.g., including optical material properties; 2) 3D-centered and web-based annotation systems for object classification and metadata enrichment; 3) technical solutions for long-term storage and standardized data formats and 4) 3D visualization and 3D printing technologies. <br><br>
+
+                        During this interactive session, we want to start a discussion among practitioners and researchers on the challenges in the areas mentioned above, aiming to better implement and make use of 3D mass digitization in long term. We would further like to identify and prioritize challenges and opportunities, eventually compiling a research and development agenda to shape future work in this area.
+
+                        <div class="empty"></div>
+
+                    <table class="table" style="text-align:left;">
+                        <tbody>
+                            <th scope="row" rowspan="2" style="vertical-align:middle;">Moderator</th>
+                                <tr><td>Constanze Fuhrmann - Fraunhofer IGD, Competence Center Cultural Heritage Digitization, Germany</td></tr>
+                                            
+                            <th scope="row" rowspan="4" style="vertical-align:middle;">Panel</th>
+                                <tr><td>Andreas Georgopoulos - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
+                                <tr><td>Thomas Kersten - Photogrammetry and Laser Scanning Lab - HafenCity University Hamburg, Germany </td></tr>
+                                <tr><td>Diego Gonzalez-Aguilera - Dept. of Cartography and Land - University of Salamanca, Spain</td></tr>
+                        </tbody>
+                    </table>  
                 </div>
             </div>
         </div>
@@ -571,6 +602,25 @@
   
     <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
     <script src="Bootstrap-Image-Gallery-master/Bootstrap-Image-Gallery-master/js/bootstrap-image-gallery.min.js"></script>
+
+
+    <script>
+        $(function () {
+          $(".navbar-toggle").blur(function (event) {
+            var screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+              $(".navbar-collapse.in").collapse('hide');
+            }
+          });
+
+          $(".navbar-toggle").click(function (event) {
+            $(event.target).focus();
+          });
+        });
+    </script>
+
+
+    
 
 </body>
 

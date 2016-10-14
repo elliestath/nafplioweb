@@ -25,21 +25,20 @@ body {
 @media(min-width: 992px) {
     .navbar {
         font-family: 'Source Sans Pro', sans-serif;
-        padding: 15px 0;
+        padding: 15px 15px;
+        margin:0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     } 
 
-    .top-nav-collapse {
-        padding: 0;
-    }
 }
 
 /*--------------------------------General---------------------------------------------------------*/
 /*.navbar-brand{
     vertical-align: middle;
 }*/
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -241,6 +240,14 @@ section{
     background: #fff;
 }
 
+.programme-section h3 {
+    text-align: left;
+}
+
+.programme-section p{
+    text-align: justify;
+}
+
 /*-----------------------------------------------*/
 .venue-section {
     text-align: center;
@@ -253,6 +260,10 @@ section{
 
 .venue-section h3{
     padding-bottom: 10px;
+}
+
+.venue-section h4{
+    text-align: center;
 }
 
 .venue-section #map-outer p{
