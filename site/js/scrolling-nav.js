@@ -17,3 +17,28 @@ $(function() {
         event.preventDefault();
     });
 });
+
+//jQuery for collapsable nav
+$(function () {
+    $(".navbar-toggle").blur(function () {
+        var screenWidth = window.innerWidth;
+        if (screenWidth < 768) {
+            $(".navbar-collapse.in").collapse('hide');
+            }
+    });
+
+   /* $(".navbar-toggle").click(function (event) {
+        $(event.target).focus();
+          });*/
+});
+
+
+/*<!--     <script>
+    //hidden menu by default, strange behaviour!!!!!!
+        $(function () {
+            $(".navbar-collapse").click(function() {
+                $(".navbar-collapse").collapse('hide');
+            });
+        });
+    </script> -->*/
+

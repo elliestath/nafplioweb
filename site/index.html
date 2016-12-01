@@ -58,7 +58,7 @@
     <nav class="nav navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-                 <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button" aria-expanded="false">
+                 <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -68,7 +68,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-collapse collapse in">
+            <div class="navbar-collapse collapse" data-toggle="collapse" data-target=".nav-collapse.in">
                 <ul class="nav navbar-nav sm">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
@@ -97,16 +97,6 @@
         </div>
         <!-- /.container -->
     </nav>
-
-
-    <script>
-    //hidden menu by default, strange behaviour!!!!!!
-        $(function () {
-            $(".navbar-collapse").click(function() {
-                $(".navbar-collapse").collapse('hide');
-            });
-        });
-    </script>
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">       
@@ -179,7 +169,7 @@
                         <div><hr></div>
                     </div> 
                     <h2>Sponsors</h2>
-                        <a href="http://cipa.icomos.org/" target="_blank">               
+                        <a href="http://http://www.ntua.gr/index_en.html" target="_blank">               
                             <img src="images/logo_ntua_tr.bmp"  alt="NTUA" width="100" height="99";></a>
     				    <p style="text-align:center;"> <br> More to be announced soon!</p>     
             </div>
@@ -209,11 +199,11 @@
 
                           <th scope="row" rowspan="7" style="vertical-align:middle;">Local Organising Committee</th>
                           <tr><td>Panagiotis Agrafiotis - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
+                          <tr><td>Regina Chliverou - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
                           <tr><td>Georgia Kontogianni - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
                           <tr><td>Sofia Soile - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
                           <tr><td>Ellie Stathopoulou - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
                           <tr><td>Sevi Tapinaki - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
-                          <tr><td>Regina Chliverou - Laboratory of Photogrammetry - NTUA, Athens, Greece</td></tr>
 					   </tbody>
 					</table>  
                 </div>
@@ -232,7 +222,7 @@
 					  <tbody>
 					    <tr>
 					      <th scope="row">Abstract Submission</th>
-					      <td>20 November 2016</td>   
+					      <td>30 November 2016</td>   
 					    </tr>
 					    <tr>
 					      <th scope="row">Notification to Authors</th>
@@ -311,7 +301,7 @@
                                 </div>
                             <div class="col-lg-6" id="links">
                                 <a href="images/CC5.jpg" title="CloudCompare - point cloud registration" data-gallery>
-                                    <img class="xs-image-gal" src="images/CC5.jpg" alt="CC1" style="width:210px;height:114px">
+                                    <img class="xs-image-gal" src="images/CC5.jpg" alt="CC1" style="width:192px;height:114px">
                                 </a>
                             </div>
 
@@ -337,13 +327,41 @@
 
                                 <div class="col-lg-6" id="links">
                                     <a href="images/3DTK1.png" title="3DTK - The 3D Toolkit - SLAM6D" data-gallery>
-                                        <img class="xs-image-gal" src="images/3DTK1.png" alt="3DTK1" style="width:210px;height:114px">
+                                        <img class="xs-image-gal" src="images/3DTK1.png" alt="3DTK1" style="width:192px;height:114px">
                                     </a>
                                 </div>
 
                                 <div class="col-lg-6" id="links">
                                     <a href="images/3DTK2.png" title="3DTK - The 3D Toolkit - Thermal and Color" data-gallery>
                                         <img src="images/3DTK2.png" alt="3DTK2" style="width:192px;height:114px">
+                                    </a>
+                                </div>
+                        </div> 
+
+                        <div class="col-lg-12 class= empty"><br><hr><br><br></div>
+                        <h1>Invited Speaker</h1> 
+
+                        <div class="col-lg-6">
+                            <br>
+                            <br>
+                            <img src="images/eleftheriou.jpg" class="img-circle img-fluid" alt="" width="224" height="224";>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <h2>Vasiliki Eleftheriou</h2>
+                 
+                            <a href="http://www.ysma.gr/en/" role="a" target="_blank"><h4>Acropolis Restoration Service</h4></a>
+                            <h3>The Acropolis of Athens -<br> Damage, Restoration and the importance of the Documentation</h3>
+
+                                <div class="col-lg-6" id="links">
+                                    <a href="images/YSMA1.PNG" title="YSMA - Point cloud and textured surface of a Caryatid" data-gallery>
+                                        <img class="xs-image-gal" src="images/YSMA1.PNG" alt="YSMA" style="width:192px;height:114px">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-6" id="links">
+                                    <a href="images/YSMA2.PNG" title="YSMA - Restoration interventions at the northern side of the Parthenon" data-gallery>
+                                        <img src="images/YSMA2.PNG" alt="YSMA" style="width:192px;height:114px">
                                     </a>
                                 </div>
                         </div>   
@@ -397,11 +415,16 @@
                             </tr>      
     					</tbody>
 					</table> 
+                    <div><p>Registration fees cover session attendance, conference bag, welcome drink, coffee breaks, light lunches and social dinner.<br>Students are considered participants under 30 and should provide valid evidence of their student status (to be sent by email to <a href = "mailto:3DARCH17@central.ntua.gr">3DARCH17@central.ntua.gr</a> with registration).</p></div>
 
                     <div class="empty"></div>
     			    <div class="cart">
-    					<a href="#" class="btn btn-info btn-primary disabled btn-lg" id="regbutton" role="button">Registation will be available soon!</a>
+                    <a href="https://www.eventora.com/en/Events/3d-arch-2017" class="btn btn-warning btn-lg" id="regbutton" role="button" target="_blank">Register now</a>
+    					<!-- <a href="https://www.eventora.com/en/Events/3d-arch-2017" class="btn btn-info btn-primary disabled btn-lg" id="regbutton" role="button">Registation will be available soon!</a> -->
+                    
     			    </div> 
+                    <br>
+                    <p>Registration is temporarly available only via bank transfer. Credit card payments will be available soon.</p>
                 </div>
             </div>
         </div>
@@ -602,23 +625,6 @@
   
     <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
     <script src="Bootstrap-Image-Gallery-master/Bootstrap-Image-Gallery-master/js/bootstrap-image-gallery.min.js"></script>
-
-
-    <script>
-        $(function () {
-          $(".navbar-toggle").blur(function (event) {
-            var screenWidth = window.innerWidth;
-            if (screenWidth < 768) {
-              $(".navbar-collapse.in").collapse('hide');
-            }
-          });
-
-          $(".navbar-toggle").click(function (event) {
-            $(event.target).focus();
-          });
-        });
-    </script>
-
 
     
 

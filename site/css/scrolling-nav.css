@@ -25,19 +25,29 @@ body {
 @media(min-width: 992px) {
     .navbar {
         font-family: 'Source Sans Pro', sans-serif;
-        padding: 15px 15px;
+        padding: 15px 5px;
         margin:0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     } 
 
+    .top-nav-collapse {
+        padding: 0px;
+    }
+
 }
 
+@media (max-width: 768px) {
+    .navbar {   
+          overflow-y: scroll;
+          -webkit-overflow-scrolling:touch;
+    }
+
+}
+
+
 /*--------------------------------General---------------------------------------------------------*/
-/*.navbar-brand{
-    vertical-align: middle;
-}*/
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -166,7 +176,7 @@ section{
     font-weight: 600;
 }
 
-.about-section a,.dates-section a, .venue-section a{
+.about-section a,.dates-section a, .venue-section a, .registration-section a{
     color:black;
 }
 /*-----------------------------------------------*/
@@ -218,6 +228,7 @@ section{
 .keynote-section {   
     text-align: center;
     background: #fff;
+    padding-bottom: 65px;
 }
 .keynote-section h3{  
     padding-top: 15px; 
