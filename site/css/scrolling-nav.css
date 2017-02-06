@@ -293,7 +293,7 @@ section{
 
 #map-container { height: 400px }
 @media all and (max-width: 991px) {
-    #map-outer  { height: 600px }
+    #map-outer  { height: 420px }
 }
 
 /*-----------------------------------------------*/
